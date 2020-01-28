@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style type="text/css">
+      #output_content {
+        height: <? output.append(height); ?>
+        overflow: scroll;
+        border:1px solid #ddd;
+        padding:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <pre align="left" id="output_content">
+<? output.append(body.replace(/</g,'&lt;').replace(/>/,'&gt;')); ?>
+    </pre>
+    <div align="center">
+<? output.append("<a href='" + url + "' target='_blank'>ダウンロード</a>"); ?>
+    </div>    
+  </body>
+</html>
