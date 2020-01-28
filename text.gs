@@ -3,7 +3,7 @@
  * @return {String} Google日本語入力の辞書ファイルフォーマットのテキスト
  */
 function createTextFile() {
-  var sheet = getSheet('Google日本語入力');
+  var sheet = getSheet(Config.GoogleSheetName);
   var dictionaryData = sheet.getRange(1, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues();
   var textContent = '';
   

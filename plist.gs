@@ -23,7 +23,7 @@ function plistFooter(){
  * @return {String} plistフォーマットのテキスト
  */
 function createPlistFile() {
-  var sheet = getSheet('mac標準');
+  var sheet = getSheet(Config.MacSheetName);
   var dictionaryData = sheet.getRange(1, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues();
   var plistContent = plistHeader();
   

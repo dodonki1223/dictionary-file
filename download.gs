@@ -67,7 +67,7 @@ function convertTextToBolb(textData, contentType, charSet, fileName){
  * @return {File} 作成されたFileObject
  */
 function createFileToDrive(blob){
-  var targetFolder = DriveApp.getFolderById('hogeId');
+  var targetFolder = DriveApp.getFolderById(Config.OutputFolderID);
   
   // ファイルがすでに存在している時は削除する
   var files = targetFolder.getFilesByName(blob.getName());
