@@ -1,0 +1,2 @@
+# dictionary-file
+辞書ファイルをGoogleスプレッドシートのデータから作成する
