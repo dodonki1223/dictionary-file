@@ -19,15 +19,15 @@ plistファイル、txtファイルをGoogleドライブの特定フォルダに
 |  MAC_SHEET_NAME    | MAC標準の辞書ファイル(plist)を作成するためのデータが書かれているシート名        |
 |  GOOGLE_SHEET_NAME | Google日本語入力の辞書ファイル(txt)を作成するためのデータが書かれているシート名 |
 
-![script_property](./images/script_property.png)
+<img alt="script_property" src="./images/script_property.png" width="500px">
 
 正しく設定されているかはスクリプトエディタから `TestConfig` を選択し実行します
 
-![select_run_test_config](./images/select_run_test_config.png)
+<img alt="select_run_test_config" src="./images/select_run_test_config.png" width="500px">
 
 ログを確認して正しい値が表示されていることを確認してください
 
-![test_config_run_result](./images/test_config_run_result.png)
+<img alt="test_config_run_result" src="./images/test_config_run_result.png" width="500px">
 
 ### 辞書ファイル用のデータを設定する
 
@@ -60,8 +60,8 @@ plistファイル、txtファイルをGoogleドライブの特定フォルダに
 
 `追加機能` メニューが追加されているのでクリックしてください
 
-![addon_menu](./images/addon_menu.png)
+<img alt="addon_menu" src="./images/addon_menu.png" width="500px">
 
 ダイアログが表示されたらダウンロードリンクをクリックするだけです
 
-![download_dailog](./images/download_dailog.png)
+<img alt="download_dailog" src="./images/download_dailog.png" width="500px">
