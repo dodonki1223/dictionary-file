@@ -4,7 +4,7 @@
  */
 function createTextFile() {
   var sheet = getSheet(Config.GoogleSheetName);
-  var dictionaryData = sheet.getRange(1, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues();
+  var dictionaryData = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn()).getValues();
   var textContent = '';
   
   dictionaryData.forEach(function(data){

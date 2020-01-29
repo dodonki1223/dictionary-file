@@ -24,7 +24,7 @@ function plistFooter(){
  */
 function createPlistFile() {
   var sheet = getSheet(Config.MacSheetName);
-  var dictionaryData = sheet.getRange(1, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues();
+  var dictionaryData = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn()).getValues();
   var plistContent = plistHeader();
   
   dictionaryData.forEach(function(data){
