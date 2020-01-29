@@ -1,6 +1,7 @@
 # dictionary-file
 
-辞書ファイルをGoogleスプレッドシートのデータから作成しダウンロードできるツール
+辞書ファイルをGoogleスプレッドシートのデータから作成しダウンロードできるツールです  
+plistファイル、txtファイルをGoogleドライブの特定フォルダに作成しそのファイルをダウンロードするリンクを生成する
 
 ![mac_dictionary_file_download](./images/mac_dictionary_file_download.png)
 ![google_dictionary_file_download](./images/google_dictionary_file_download.png)
@@ -14,7 +15,7 @@
 
 | プロパティ名       | 設定する値について                                                              |
 |:------------------:|:--------------------------------------------------------------------------------|
-|  OUTPUT_FOLDER_ID  | 作成される辞書ファイルの出力先フォルダID                                        |
+|  OUTPUT_FOLDER_ID  | 作成される辞書ファイルの出力先フォルダ(Googleドライブに予め作成して下さい)のID  |
 |  MAC_SHEET_NAME    | MAC標準の辞書ファイル(plist)を作成するためのデータが書かれているシート名        |
 |  GOOGLE_SHEET_NAME | Google日本語入力の辞書ファイル(txt)を作成するためのデータが書かれているシート名 |
 
