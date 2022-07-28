@@ -15,7 +15,7 @@ function plistHeader() {
  */
 function plistFooter(){
   return '</array>\n' +
-         '</plist>';
+         '</plist>\n';
 }
 
 /**
@@ -26,16 +26,16 @@ function createPlistFile() {
   var sheet = getSheet(Config.MacSheetName);
   var dictionaryData = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn()).getValues();
   var plistContent = plistHeader();
-  
+
   dictionaryData.forEach(function(data){
     plistContent += '\t<dict>\n';
     plistContent += '\t\t<key>phrase</key>\n';
-    plistContent += '\t\t<string>' + escapeXmlString(data[0]) + '</string>\n';
-    plistContent += '\t\t<key>shortcut</key>\n';
     plistContent += '\t\t<string>' + escapeXmlString(data[1]) + '</string>\n';
+    plistContent += '\t\t<key>shortcut</key>\n';
+    plistContent += '\t\t<string>' + escapeXmlString(data[0]) + '</string>\n';
     plistContent += '\t</dict>\n';
   });
-  
+
   plistContent += plistFooter();
 
   return plistContent;
